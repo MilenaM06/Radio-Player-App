@@ -4,7 +4,7 @@
 
 - This is a simple radio player application developed as a personal project. The main goal was to explore how [Capacitor](https://capacitorjs.com/) works. Inspired by the old FM radio apps that came pre-installed on phones, I decided to recreate a similar experience as a practical way to test modern web-to-native tools.
 
-- **Demo for the web app** and **demo for the mobile app** can be downloaded [here](https://github.com/MilenaM06/Radio-Player/tree/develop/app-demo/final-look-demo).
+- **Demo for the web app** and **demo for the mobile app** can be downloaded [here](https://github.com/MilenaM06/Radio-Player-App/tree/main/app-demo/final-look-demo).
 
 ---
 
@@ -22,11 +22,11 @@
 
 ### Web App
 
-![radio-player-web](https://github.com/MilenaM06/Radio-Player-App/blob/develop/app-demo/final-look-img/radio-player-web.jpg)
+![radio-player-web](https://github.com/MilenaM06/Radio-Player-App/blob/main/app-demo/final-look-img/radio-player-web.jpg)
 
 ### Mobile App
 
-![radio-player-phone](https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-phone.jpg)
+![radio-player-phone](https://github.com/MilenaM06/Radio-Player-App/blob/main/app-demo/final-look-img/radio-player-phone.jpg)
 
 ---
 
