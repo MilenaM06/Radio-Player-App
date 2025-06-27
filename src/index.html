@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Radio Player App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script type="module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+    <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+
+  </head>
+  <body class="min-h-screen flex items-start justify-center py-16 px-6 font-sans text-gray-100 selection:bg-blue-600 selection:text-white">
+    
+    <main class="container max-w-7xl mx-auto space-y-12">
+
+      <header class="text-center max-w-2xl mx-auto">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600 drop-shadow-lg mb-4">
+          🎧 Radio Player
+        </h1>
+      </header>
+
+      <section class="text-center">
+        <h2 id="nowPlaying" class="text-xl sm:text-2xl md:text-3xl font-semibold text-blue-400 mb-8 drop-shadow-md">
+          Now Playing: None
+        </h2>
+        <audio id="radioPlayer" controls autoplay 
+              class="mx-auto w-full max-w-3xl"
+              preload="auto">
+        </audio>
+      </section>
+
+      <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 max-w-7xl mx-auto">
+        
+       <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/radio-s1.png"
+            alt="Radio S1"
+            data-url="https://stream.radios.rs:9000/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+       <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/radio-s2.png"
+            alt="Radio S2"
+            data-url="https://stream.radios.rs:9002/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/radio-s3.png"
+            alt="Radio S3"
+            data-url="https://stream.radios.rs:9004/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/radio-s4.png"
+            alt="Radio S4"
+            data-url="https://stream.radios.rs:9006/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/naxi.jpg"
+            alt="Naxi Radio"
+            data-url="https://naxi128.streaming.rs:9152/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+         <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/naxi-ex-yu.png"
+            alt="Naxi Ex-Yu Radio"
+            data-url="https://naxidigital-exyu128ssl.streaming.rs:8242/;stream.nsv"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/bravo.png"
+            alt="Radio"
+            data-url="https://bravo-bobanex.radioca.st/;"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+        
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/karolina.png"
+            alt="Karolina"
+            data-url="https://streaming.karolina.rs/karolina.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/tdi.png"
+            alt="TDI Radio"
+            data-url="https://streaming.tdiradio.com/tdiradio.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/play.png"
+            alt="PLAY Radio"
+            data-url="https://stream.playradio.rs:8443/play.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/hit-fm.png"
+            alt="Hit FM"
+            data-url="https://streaming.hitfm.rs/hit.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/lola.jpg"
+            alt="Radio LOLA"
+            data-url="https://streaming.tdiradio.com/radiolola.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/ok.jpg"
+            alt="OK Radio"
+            data-url="https://sslstream.okradio.net/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/jat.png"
+            alt="Radio JAT"
+            data-url="https://streaming.radiojat.rs/radiojat.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/cool.png"
+            alt="COOL Radio"
+            data-url="https://live.coolradio.rs/cool128"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/nostalgija.png"
+            alt="Nostalgija Radio"
+            data-url="https://nostalgie64ssl.streaming.rs:9262/;*.mp3"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/in.png"
+            alt="Radio IN"
+            data-url="https://radioinnis-naxinacional.streaming.rs:8622/;stream.nsv"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+         <div class="card rounded-full shadow-2xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_10px_rgba(150,200,210,0.8)]">
+          <img
+            src="assets/imgs/pingvin.jpg"
+            alt="Radio Pingvin"
+            data-url="https://uzivo.radiopingvin.com/domaci1"
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
+        
+
+      </section>
+    </main>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
