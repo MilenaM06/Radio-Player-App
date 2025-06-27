@@ -20,13 +20,13 @@
 
 ## Final Look
 
-### Mobile App
-
-<img src="https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-phone.jpg" alt="radio-player-phone" style="max-width:400px; width:100%"/>
-
 ### Web App
 
-<img src="https://github.com/MilenaM06/Radio-Player-App/blob/develop/app-demo/final-look-img/radio-player-web.jpg" alt="radio-player-web" style="max-width:800px; width:100%"/>
+![radio-player-web](https://github.com/MilenaM06/Radio-Player-App/blob/develop/app-demo/final-look-img/radio-player-web.jpg)
+
+### Mobile App
+
+![radio-player-phone](https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-phone.jpg)
 
 ---
 
