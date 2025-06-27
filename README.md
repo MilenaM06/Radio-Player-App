@@ -2,12 +2,9 @@
 
 ## Overview
 
-This is a simple radio player application developed as a personal project. The main goal was to explore how [Capacitor](https://capacitorjs.com/) works.
+- This is a simple radio player application developed as a personal project. The main goal was to explore how [Capacitor](https://capacitorjs.com/) works. Inspired by the old FM radio apps that came pre-installed on phones, I decided to recreate a similar experience as a practical way to test modern web-to-native tools.
 
-Inspired by the old FM radio apps that came pre-installed on phones, I decided to recreate a similar experience as a practical way to test modern web-to-native tools.
-
-🌐 A **demo for the web app** can be downloaded [here](#).  
-📱 A **demo for the mobile app** can be downloaded [here](#).
+- **Demo for the web app** and **demo for the mobile app** can be downloaded [here](https://github.com/MilenaM06/Radio-Player/tree/develop/app-demo/final-look-demo).
 
 ---
 
@@ -23,14 +20,21 @@ Inspired by the old FM radio apps that came pre-installed on phones, I decided t
 
 ## Final Look
 
-![radio-player-phone]()
-![radio-player-web]()
+### Mobile App
+
+![radio-player-phone](https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-phone.jpg)
+
+### Web App
+
+![radio-player-web](https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-web.png)
 
 ---
 
 ## Build and Run
 
-# 1. Clone the repository
+#### ⚠️ Note - Capacitor v7 requires JDK 21 installed for Android builds
+
+### 1. Clone the repository
 
 ```bash
 git clone http....
@@ -38,33 +42,31 @@ git clone http....
 
 cd radio-player
 
-# 2. Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-# ⚠️ Capacitor v7 requires JDK 21 installed for Android builds
-
-# 3. Build the web app
+### 3. Build the web app
 
 ```bash
 npm run build
 ```
 
-# 4. Run the web app locally
+### 4. Run the web app locally
 
 ```bash
 npm start
 ```
 
-# 5. Sync with native platforms (Android/iOS)
+### 5. Sync with native platforms (Android/iOS)
 
 ```bash
 npx cap sync
 ```
 
-# 6. Run on Android / IOS
+### 6. Run on Android / IOS
 
 ```bash
 npx cap run android
