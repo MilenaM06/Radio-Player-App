@@ -37,10 +37,8 @@
 ### 1. Clone the repository
 
 ```bash
-git clone http....
+git clone https://github.com/MilenaM06/Radio-Player-App.git
 ```
-
-cd radio-player
 
 ### 2. Install dependencies
 
@@ -66,7 +64,7 @@ npm start
 npx cap sync
 ```
 
-### 6. Run on Android / IOS
+### 6. Run on Android/IOS
 
 ```bash
 npx cap run android
