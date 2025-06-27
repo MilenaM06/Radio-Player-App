@@ -22,11 +22,11 @@
 
 ### Mobile App
 
-![radio-player-phone](https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-phone.jpg)
+<img src="https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-phone.jpg" alt="radio-player-phone" width="300" />
 
 ### Web App
 
-![radio-player-web](https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-web.png)
+<img src="https://github.com/MilenaM06/Radio-Player/blob/develop/app-demo/final-look-img/radio-player-web.png" alt="radio-player-web" width="400" />
 
 ---
 
