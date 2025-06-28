@@ -34,7 +34,7 @@
 
 - You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS).
 
-<hr style="border: none; height: 0.5px; background-color: #ccc;" />
+---
 
 ### Prerequisites
 
@@ -95,7 +95,7 @@ npm start
 
 - You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
 
-<hr style="border: none; height: 0.5px; background-color: #ccc;" />
+---
 
 ### Option 1: Open in Android Studio or Xcode
 
@@ -121,7 +121,7 @@ npx cap open ios
 
 3. Press **Run** in Xcode to build and launch the app
 
-<hr style="border: none; height: 0.5px; background-color: #ccc;" />
+---
 
 ### Option 2: Run from the Command Line
 
