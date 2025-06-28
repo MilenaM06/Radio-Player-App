@@ -34,51 +34,66 @@
 
 - You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS).
 
-- Start by cloning the repository:
+---
 
-```bash
-   git clone https://github.com/MilenaM06/Radio-Player-App.git
-```
+### Prerequisites
 
-- ⚠️ Note - Capacitor v7 requires JDK 21 installed for Android builds.
+- Node.js installed
+- Capacitor CLI (installed with dependencies)
+- For Android: Android Studio and JDK 21 (required for Capacitor v7)
+- For iOS: Xcode (macOS only)
 
 ---
 
-### Web App
+### Setup the Project
 
-This app supports running directly in the browser.
-
-**Steps:**
-
-1. Navigate to the project folder
+1. Clone the repository:
 
 ```bash
-   cd Radio-Player-App
+git clone https://github.com/MilenaM06/Radio-Player-App.git
 ```
 
-2. Install dependencies
+2. Navigate to the project:
 
 ```bash
-   npm install
+cd Radio-Player-App
 ```
 
-3. Build the web app
+3. Install dependencies:
 
 ```bash
-   npm run build
+npm install
 ```
 
-4. Start the development server
+4. Build the frontend:
 
 ```bash
-   npm start
+npm run build
+```
+
+5. Sync native platforms (if you are running on Andorid/IOS):
+
+```bash
+npx cap sync
 ```
 
 ---
 
-### Native App (Android/iOS)
+### Run as Web App
 
-You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
+- To start the development server:
+
+```bash
+npm start
+```
+
+- This will open the app in your browser at `http://localhost:5100`.
+
+---
+
+### Run as Native App (Android/iOS)
+
+- You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
 
 ---
 
@@ -99,7 +114,7 @@ You can run the app on Android or iOS using one of two approaches: a quick and u
 1. Open the project in Xcode
 
 ```bash
-   npx cap open ios
+npx cap open ios
 ```
 
 2. Select a simulator or connected iPhone
@@ -110,19 +125,13 @@ You can run the app on Android or iOS using one of two approaches: a quick and u
 
 ### Option 2: Run from the Command Line
 
-1. Sync platforms
-
-```bash
-npx cap sync
-```
-
-2. Run on Android
+#### To run on Android:
 
 ```bash
 npx cap run android
 ```
 
-3. Run on iOS
+#### To run on iOS:
 
 ```bash
 npx cap run ios
