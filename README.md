@@ -98,9 +98,9 @@ You can run the app on Android or iOS using one of two approaches: a quick and u
 
 1. Open the project in Xcode
 
-   ```bash
+```bash
    npx cap open ios
-   ```
+```
 
 2. Select a simulator or connected iPhone
 
@@ -112,17 +112,18 @@ You can run the app on Android or iOS using one of two approaches: a quick and u
 
 1. Sync platforms
 
-   ```bash
-   npx cap sync
-   ```
+```bash
+npx cap sync
+```
 
 2. Run on Android
 
-   ```bash
-   npx cap run android
-   ```
+```bash
+npx cap run android
+```
 
 3. Run on iOS
-   ```bash
-   npx cap run ios
-   ```
+
+```bash
+npx cap run ios
+```
