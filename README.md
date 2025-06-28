@@ -34,7 +34,7 @@
 
 - You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS).
 
-<hr style="border: 0; height: 1px; background: #ccc;" />
+<hr style="border: none; height: 0.5px; background-color: #ccc;" />
 
 ### Prerequisites
 
@@ -43,7 +43,7 @@
 - For Android: Android Studio and JDK 21 (required for Capacitor v7)
 - For iOS: Xcode (macOS only)
 
-<hr style="border: 0; height: 1px; background: #ccc;" />
+---
 
 ### Setup the Project
 
@@ -77,7 +77,7 @@ npm run build
 npx cap sync
 ```
 
-<hr style="border: 0; height: 1px; background: #ccc;" />
+---
 
 ### Run as Web App
 
@@ -89,13 +89,13 @@ npm start
 
 - This will open the app in your browser at `http://localhost:5100`.
 
-<hr style="border: 0; height: 1px; background: #ccc;" />
+---
 
 ### Run as Native App (Android/iOS)
 
 - You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
 
-<hr style="border: 0; height: 1px; background: #ccc;" />
+<hr style="border: none; height: 0.5px; background-color: #ccc;" />
 
 ### Option 1: Open in Android Studio or Xcode
 
@@ -121,7 +121,7 @@ npx cap open ios
 
 3. Press **Run** in Xcode to build and launch the app
 
-<hr style="border: 0; height: 1px; background: #ccc;" />
+<hr style="border: none; height: 0.5px; background-color: #ccc;" />
 
 ### Option 2: Run from the Command Line
 
