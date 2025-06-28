@@ -32,46 +32,109 @@
 
 ## Build and Run
 
-#### ⚠️ Note - Capacitor v7 requires JDK 21 installed for Android builds
+- You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS), depending on your development or deployment needs.
 
-### 1. Clone the repository
+- Start by cloning the repository:
 
 ```bash
 git clone https://github.com/MilenaM06/Radio-Player-App.git
 ```
 
-### 2. Install dependencies
+- ⚠️ Note - Capacitor v7 requires JDK 21 installed for Android builds.
+
+---
+
+### 🌐 Web App
+
+This app supports running directly in the browser.
+
+**Steps:**
+
+1. Navigate to the project folder
 
 ```bash
-npm install
+   `cd Radio-Player-App`
 ```
 
-### 3. Build the web app
+2. Install dependencies
 
 ```bash
-npm run build
+   `npm install`
 ```
 
-### 4. Run the web app locally
+3. Build the web app
 
 ```bash
-npm start
+   `npm run build`
 ```
 
-### 5. Sync with native platforms (Android/iOS)
+4. Start the development server
 
 ```bash
-npx cap sync
+   `npm start`
 ```
 
-### 6. Run on Android/IOS
+---
 
-```bash
-npx cap run android
-```
+### 📱 Native App (Android/iOS)
 
-or
+You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
 
-```bash
-npx cap run ios
-```
+---
+
+#### Option 1: Open in Android Studio or Xcode
+
+**Run on Android using Android Studio:**
+
+1. Sync native platforms
+
+   ```bash
+   `npx cap sync`
+   ```
+
+2. Open the `android/` folder in Android Studio
+
+3. Wait for Gradle to finish syncing
+
+4. Connect a physical device or start an emulator
+
+5. Click **Run** to build and deploy the app
+
+**Run on iOS using Xcode:**
+
+1. Sync the iOS project
+
+   ```bash
+   npx cap sync ios
+   ```
+
+2. Open the project in Xcode
+
+   ```bash
+   `npx cap open ios`
+   ```
+
+3. Select a simulator or connected iPhone
+
+4. Press **Run** in Xcode to build and launch the app
+
+---
+
+#### Option 2: Run from the Command Line
+
+1. Sync platforms
+
+   ```bash
+   `npx cap sync`
+   ```
+
+2. Run on Android
+
+   ```bash
+   `npx cap run android`
+   ```
+
+3. Run on iOS
+   ```bash
+   `npx cap run ios`
+   ```
