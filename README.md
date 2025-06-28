@@ -32,45 +32,106 @@
 
 ## Build and Run
 
-#### ⚠️ Note - Capacitor v7 requires JDK 21 installed for Android builds
+- You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS).
 
-### 1. Clone the repository
+---
+
+### Prerequisites
+
+- Node.js installed
+- Capacitor CLI (installed with dependencies)
+- For Android: Android Studio and JDK 21 (required for Capacitor v7)
+- For iOS: Xcode (macOS only)
+
+---
+
+### Setup the Project
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/MilenaM06/Radio-Player-App.git
 ```
 
-### 2. Install dependencies
+2. Navigate to the project:
+
+```bash
+cd Radio-Player-App
+```
+
+3. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 3. Build the web app
+4. Build the frontend:
 
 ```bash
 npm run build
 ```
 
-### 4. Run the web app locally
-
-```bash
-npm start
-```
-
-### 5. Sync with native platforms (Android/iOS)
+5. Sync native platforms (when building for Android or iOS):
 
 ```bash
 npx cap sync
 ```
 
-### 6. Run on Android/IOS
+---
+
+### Run as Web App
+
+- To start the development server:
+
+```bash
+npm start
+```
+
+- This will open the app in your browser at `http://localhost:5100`.
+
+---
+
+### Run as Native App (Android/iOS)
+
+- You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
+
+---
+
+### Option 1: Open in Android Studio or Xcode
+
+**Run on Android using Android Studio:**
+
+1. Open the `android/` folder in Android Studio
+
+2. Wait for Gradle to finish syncing
+
+3. Connect a physical device or start an emulator
+
+4. Click **Run** to build and deploy the app
+
+**Run on iOS using Xcode:**
+
+1. Open the project in Xcode
+
+```bash
+npx cap open ios
+```
+
+2. Select a simulator or connected iPhone
+
+3. Press **Run** in Xcode to build and launch the app
+
+---
+
+### Option 2: Run from the Command Line
+
+#### To run on Android:
 
 ```bash
 npx cap run android
 ```
 
-or
+#### To run on iOS:
 
 ```bash
 npx cap run ios
