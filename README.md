@@ -32,19 +32,19 @@
 
 ## Build and Run
 
-- You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS), depending on your development or deployment needs.
+- You can run the Radio Player App either as a **web application** or a **native mobile application** (Android/iOS).
 
 - Start by cloning the repository:
 
 ```bash
-git clone https://github.com/MilenaM06/Radio-Player-App.git
+   git clone https://github.com/MilenaM06/Radio-Player-App.git
 ```
 
 - ⚠️ Note - Capacitor v7 requires JDK 21 installed for Android builds.
 
 ---
 
-### 🌐 Web App
+### Web App
 
 This app supports running directly in the browser.
 
@@ -53,88 +53,76 @@ This app supports running directly in the browser.
 1. Navigate to the project folder
 
 ```bash
-   `cd Radio-Player-App`
+   cd Radio-Player-App
 ```
 
 2. Install dependencies
 
 ```bash
-   `npm install`
+   npm install
 ```
 
 3. Build the web app
 
 ```bash
-   `npm run build`
+   npm run build
 ```
 
 4. Start the development server
 
 ```bash
-   `npm start`
+   npm start
 ```
 
 ---
 
-### 📱 Native App (Android/iOS)
+### Native App (Android/iOS)
 
 You can run the app on Android or iOS using one of two approaches: a quick and user-friendly **IDE method** or a direct **command-line method**.
 
 ---
 
-#### Option 1: Open in Android Studio or Xcode
+### Option 1: Open in Android Studio or Xcode
 
 **Run on Android using Android Studio:**
 
-1. Sync native platforms
+1. Open the `android/` folder in Android Studio
 
-   ```bash
-   `npx cap sync`
-   ```
+2. Wait for Gradle to finish syncing
 
-2. Open the `android/` folder in Android Studio
+3. Connect a physical device or start an emulator
 
-3. Wait for Gradle to finish syncing
-
-4. Connect a physical device or start an emulator
-
-5. Click **Run** to build and deploy the app
+4. Click **Run** to build and deploy the app
 
 **Run on iOS using Xcode:**
 
-1. Sync the iOS project
+1. Open the project in Xcode
 
    ```bash
-   npx cap sync ios
+   npx cap open ios
    ```
 
-2. Open the project in Xcode
+2. Select a simulator or connected iPhone
 
-   ```bash
-   `npx cap open ios`
-   ```
-
-3. Select a simulator or connected iPhone
-
-4. Press **Run** in Xcode to build and launch the app
+3. Press **Run** in Xcode to build and launch the app
 
 ---
 
-#### Option 2: Run from the Command Line
+### Option 2: Run from the Command Line
 
 1. Sync platforms
 
    ```bash
-   `npx cap sync`
+   npx cap sync
    ```
 
 2. Run on Android
 
    ```bash
-   `npx cap run android`
+   npx cap run android
    ```
 
 3. Run on iOS
    ```bash
-   `npx cap run ios`
+   npx cap run ios
    ```
